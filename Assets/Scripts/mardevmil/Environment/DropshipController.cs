@@ -159,6 +159,7 @@
             if (_doorPoint.transform.position != _doorSpawnObject.transform.position)
             {
                 _doorSpawnObject.transform.position = _doorPoint.transform.position;
+                _doorSpawnObject.transform.rotation = _doorPoint.transform.rotation;
                 _doorSpawnObject.transform.SetParent(_doorPoint);
             }
 
