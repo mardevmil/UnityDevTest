@@ -14,9 +14,10 @@
         [HideInInspector]
         public float Angle { get { return _angle; } }
 
-        //[HideInInspector]
+        public BlockData data;
         public BlockController nextBlock;
         public Transform prefectLandingPoint;
+        public bool isLastInSegment;
 
         #region Variables for determine angle
         private Vector3 _initVector = Vector3.zero;
@@ -42,13 +43,10 @@
         {
             if(other.CompareTag("Player"))
             {
-                var playerController = other.GetComponent<PlayerController>();
-                if(playerController)
-                {
-                    GameManager.Instance.playerController.Rigidbody.drag = 2f;                    
-                }
-                GameManager.Instance.currentBlockController = this;
-                GameManager.Instance.playerController.state = PlayerController.PlayerState.Landed;
+                EventManager.PlayerLandedOnBlock(this);
+                if (isLastInSegment)
+                    EventManager.PlayerPassEndOfSegment();
+
                 AddTorque();
             }
         }

@@ -40,6 +40,7 @@
                     var blockData = new BlockData()
                     {
                         id = j,
+                        segmentId = i,
                         height = Random.Range(10f, 12f),
                         width = Random.Range(2f, 4f),
                         color = _colors[Random.Range(0,3)]                        

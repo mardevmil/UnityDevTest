@@ -19,6 +19,7 @@
     public struct BlockData
     {
         public int id;
+        public int segmentId;
         public float height;
         public float width;
         public Color color;        

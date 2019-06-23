@@ -16,12 +16,25 @@
         // Start is called before the first frame update
         void Start()
         {
+            EventManager.playerLandedOnBlock += OnPlayerLandedOnBlock;
+
             Rigidbody = GetComponent<Rigidbody>();
             if(Rigidbody)
             {
                 //_selfRigidbody.isKinematic = false;
                 Rigidbody.useGravity = true;
             }
+        }
+
+        private void OnDestroy()
+        {
+            EventManager.playerLandedOnBlock -= OnPlayerLandedOnBlock;
+        }
+
+        private void OnPlayerLandedOnBlock(BlockController blockController)
+        {            
+            Rigidbody.drag = 2f;            
+            state = PlayerState.Landed;
         }
 
         // Update is called once per frame
