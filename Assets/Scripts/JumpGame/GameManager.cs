@@ -17,10 +17,7 @@
 
         [SerializeField]
         private AutoCam _autoCam;
-
-        private BlockController[] _blockControllers;
-        private int _blockControllerIndex = 0;
-
+        
         [HideInInspector]
         public BlockController currentBlockController;
         [HideInInspector]
@@ -28,8 +25,13 @@
 
         private ObjectPooler _blocksPool;
         private ObjectPooler _groundPool;
+        private ObjectPooler _bottomPool;
+
         Vector3 segmentSpawnPos = Vector3.zero;
         private int _currentSegmentIndex = 0;
+        private BlockController _previousBlock;
+        private BlockController _firstSpawedBlock;
+        
         #endregion
 
         #region Variables for calculating jump velocity
@@ -47,10 +49,13 @@
         #region Mono
         private void Start()
         {
-            _groundPool = new ObjectPooler(_levelData.groundPrefab, _levelData.segments.Length);
-            _blocksPool = new ObjectPooler(_levelData.blockPrefab, _levelData.segments.Length * _levelData.segments[0].blocks.Length);
+            _groundPool = new ObjectPooler(_levelData.groundPrefab, 10);
+            _blocksPool = new ObjectPooler(_levelData.blockPrefab, 20);
+            _bottomPool = new ObjectPooler(_levelData.bottomPrefab, 20);
+
             EventManager.playerLandedOnBlock += OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment += OnPlayerPassEndOfSegment;
+            EventManager.blockFellOnGround += OnBlockFellOnGround;
             Initialization();
         }
 
@@ -58,6 +63,7 @@
         {
             EventManager.playerLandedOnBlock -= OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment -= OnPlayerPassEndOfSegment;
+            EventManager.blockFellOnGround -= OnBlockFellOnGround;
         }
         #endregion
 
@@ -68,10 +74,21 @@
         }
 
         private void OnPlayerPassEndOfSegment()
+        {            
+            if (_currentSegmentIndex < _levelData.segments.Length)
+            {
+                SpawnSegment(_levelData.segments[_currentSegmentIndex]);
+                _currentSegmentIndex++;
+            }
+        }
+        private void OnBlockFellOnGround(BlockController blockController)
         {
-            Debug.LogError("+++ OnPlayerPassEndOfSegment");
-            if(_currentSegmentIndex < _levelData.segments.Length - 1)
-                SpawnSegment(_levelData.segments[_currentSegmentIndex++]);
+            _bottomPool.Release(blockController.bottom);
+            if (blockController.isLastInSegment)            
+                _groundPool.Release(blockController.ground);
+
+            blockController.ResetValues();
+            _blocksPool.Release(blockController.gameObject);
         }
         #endregion
 
@@ -80,21 +97,17 @@
         public void Initialization()
         {
             if (_levelData.segments.Length == 0) return;
-
-            int blockCount = 0;
-            for (int i = 0; i < _levelData.segments.Length; i++)
-                for (int j = 0; j < _levelData.segments[i].blocks.Length; j++)
-                    blockCount++;
-
-            _blockControllers = new BlockController[blockCount];            
-
+            
             for (int i = 0; i < 2; i++)
             {
                 SpawnSegment(_levelData.segments[i]);
                 _currentSegmentIndex++;
             }
 
-            var playerPos = _blockControllers[0].SpawnPoint.position;
+            var playerPos = Vector3.zero;
+            if (_firstSpawedBlock != null)
+                playerPos = _firstSpawedBlock.SpawnPoint.position;
+            
             var player = Instantiate(_levelData.playerPrefab, playerPos, Quaternion.identity, _startPoint);
             player.name = "Player";
 
@@ -106,6 +119,7 @@
 
         private void SpawnSegment(SegmentData segmentData)
         {
+            //Debug.LogError("*** segment " + segmentData.id);
             var ground = _groundPool.Get();
             ground.transform.position = segmentSpawnPos;
             ground.transform.SetParent(_startPoint);
@@ -117,54 +131,73 @@
             var halfOfLast = segmentData.blocks[segmentData.blocks.Length - 1].width / 2f;
             groundScale.z += halfOfFirst;
             groundScale.z += halfOfLast;
+            groundScale.x = 120f;
             ground.transform.localScale = groundScale;
 
             var groundPos = ground.transform.position;
             groundPos.z += ground.transform.localScale.z / 2f - halfOfFirst;
+            groundPos.y -= 15f;
             ground.transform.position = groundPos;
-
+            
             for (int j = 0; j < segmentData.blocks.Length; j++)
             {
-                var block = _blocksPool.Get();
-                block.transform.position = segmentSpawnPos;
-                block.transform.SetParent(_startPoint);
-                block.name = "Block_[" + segmentData.id + "]_[" + segmentData.blocks[j].id + "]";
+                var bottom = _bottomPool.Get();
+                bottom.transform.position = segmentSpawnPos;
+                bottom.transform.SetParent(_startPoint);
+                var tmpScale = bottom.transform.localScale;
+                tmpScale.x = 4f;
+                tmpScale.z = 4f;
+                bottom.transform.localScale = tmpScale;
+                bottom.name = "Bottom_[" + segmentData.id + "]_[" + segmentData.blocks[j].id + "]";
 
+                var bottomPos = bottom.transform.position;
+                bottomPos.z += j * _levelData.offsetZ;
+                bottom.transform.position = bottomPos;
+
+                var block = _blocksPool.Get();
                 var scale = block.transform.localScale;
                 scale.x = segmentData.blocks[j].width;
                 scale.z = segmentData.blocks[j].width;
                 scale.y = segmentData.blocks[j].height;
                 block.transform.localScale = scale;
+                
+                var tmpPos = new Vector3(segmentSpawnPos.x, segmentSpawnPos.y, segmentSpawnPos.z);
+                tmpPos.z += j * _levelData.offsetZ;
+                //tmpPos.y += 0.12f;
+                block.transform.position = tmpPos;
+                block.transform.SetParent(_startPoint);
+                block.name = "Block_[" + segmentData.id + "]_[" + segmentData.blocks[j].id + "]";
+
 
                 var meshRenderer = block.GetComponentInChildren<MeshRenderer>();
                 if (meshRenderer != null)
                     meshRenderer.material.color = segmentData.blocks[j].color;
 
-                var tmpPos = block.transform.position;
-                tmpPos.z += j * _levelData.offsetZ;
-                block.transform.position = tmpPos;
-
                 var blockController = block.GetComponent<BlockController>();
                 if (blockController)
                 {
+                    if (segmentData.id == 0 && segmentData.blocks[j].id == 0)
+                        _firstSpawedBlock = blockController;
+
+                    blockController.ground = ground;
+                    blockController.bottom = bottom;
                     blockController.data = segmentData.blocks[j];
-                    blockController.isLastInSegment = j == segmentData.blocks.Length - 1;
-                    _blockControllers[_blockControllerIndex] = blockController;
+                    blockController.isLastInSegment = j == segmentData.blocks.Length - 1;                    
                 }
 
-                if (!(segmentData.id == 0 && segmentData.blocks[j].id == 0))
-                    _blockControllers[_blockControllerIndex - 1].nextBlock = _blockControllers[_blockControllerIndex];
+                if (_previousBlock != null)
+                    _previousBlock.nextBlock = blockController;
 
-                _blockControllerIndex++;
-
+                _previousBlock = blockController;
+                
                 if (j == segmentData.blocks.Length - 1)
                 {
-                    segmentSpawnPos = block.transform.position;
+                    segmentSpawnPos = bottom.transform.position;
                     segmentSpawnPos.z += _levelData.offsetZ;
                 }
-            }
+            }                      
         }
-
+        
         /// <summary>
         /// Calculation velocity with given target and angle
         /// </summary>

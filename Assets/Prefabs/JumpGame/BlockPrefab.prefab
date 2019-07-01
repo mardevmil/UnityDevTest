@@ -42,9 +42,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.05, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &8746355197767825370
+  m_Size: {x: 1.070163, y: 0.015080117, z: 1.070163}
+  m_Center: {x: 0, y: -0.01745994, z: 0}
+--- !u!65 &2626340618408018132
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,7 +98,8 @@ GameObject:
   - component: {fileID: 6164781847851259691}
   - component: {fileID: 4388158985294141538}
   - component: {fileID: 8708945384628306156}
-  m_Layer: 0
+  - component: {fileID: 4999306725839683973}
+  m_Layer: 12
   m_Name: BlockPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,8 +150,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spawnPoint: {fileID: 7334160101497897941}
-  nextBlock: {fileID: 0}
   prefectLandingPoint: {fileID: 7907301929395998595}
+  data:
+    id: 0
+    segmentId: 0
+    height: 0
+    width: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+  nextBlock: {fileID: 0}
+  bottom: {fileID: 0}
+  ground: {fileID: 0}
+  isLastInSegment: 0
+--- !u!65 &4999306725839683973
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482323014384788485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0701627, y: 0.9176973, z: 1.0701627}
+  m_Center: {x: 0, y: 0.45884866, z: 0}
 --- !u!1 &7275053569935455169
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
       propertyPath: m_Name
       value: BlockModel
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -236,18 +263,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a0590b58812f74044864fd1345757771, type: 2}
-    - target: {fileID: 2300000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26b4d9e4be35f14ca59ac9d488958c8, type: 3}
 --- !u!1 &2365947547325923851 stripped

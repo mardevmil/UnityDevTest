@@ -91,6 +91,7 @@
                     element.transform.SetParent(poolElements[i].parent);
                     element.transform.localScale = poolElements[i].scale;
                     element.transform.position = poolElements[i].position;
+                    element.name = poolElements[i].name;
                     element.SetActive(false);
                 }
             }

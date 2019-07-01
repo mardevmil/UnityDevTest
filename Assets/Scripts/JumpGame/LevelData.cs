@@ -7,6 +7,7 @@
     {
         public GameObject groundPrefab;
         public GameObject blockPrefab;
+        public GameObject bottomPrefab;
         public GameObject playerPrefab;
 
         [Space, Range(0.5f, 100f)]
@@ -28,7 +29,7 @@
         [ContextMenu("Generate Random Blocks")]
         public void GenerateRandom()
         {
-            int segmentLength = 5;
+            int segmentLength = 50;
             int length = 5;
 
             segments = new SegmentData[segmentLength];
