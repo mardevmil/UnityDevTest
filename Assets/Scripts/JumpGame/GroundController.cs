@@ -10,8 +10,8 @@
         {            
             var blockController = other.GetComponent<BlockController>();
             if(blockController)
-            {                
-                EventManager.BlockFellOnGround(blockController);
+            {
+                EventManager.blockFellOnGround(blockController);
             }            
         }
     }

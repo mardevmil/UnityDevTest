@@ -1,7 +1,7 @@
-﻿namespace mardevmil.UI
+﻿namespace JumpGame
 {
-
     using UnityEngine;
+    using UnityEngine.SceneManagement;
     using UnityEngine.UI;
 
     public class MainMenuWindow : BaseWindow
@@ -22,7 +22,7 @@
 
         private void OnTapToPlay()
         {
-            GuiManager.ShowWindow("UI_IN_GAME");
+            SceneManager.LoadScene("Game");            
         }
     }
 }

@@ -45,11 +45,11 @@
             if(other.CompareTag("Player"))
             {
                 //Debug.LogError("****************** OnTriggerEnter " + other.gameObject);
-                EventManager.PlayerLandedOnBlock(this);
+                EventManager.playerLandedOnBlock(this);
                 if (isLastInSegment)
                 {
                     //Debug.LogError("+++++++++++++++ PlayerPassEndOfSegment " + other.gameObject);
-                    EventManager.PlayerPassEndOfSegment();                    
+                    EventManager.playerPassEndOfSegment();               
                 }
 
                 AddTorque();

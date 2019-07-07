@@ -4,13 +4,13 @@
     {
         public delegate void BlockDelegate(BlockController blockController);
 
-        public static VoidDelegate playerPassEndOfSegment;
-        public static BlockDelegate playerLandedOnBlock;
-        public static BlockDelegate blockFellOnGround;
-                
-        public static void PlayerPassEndOfSegment() { playerPassEndOfSegment?.Invoke(); }
-        public static void PlayerLandedOnBlock(BlockController blockController) { playerLandedOnBlock?.Invoke(blockController); }
-        public static void BlockFellOnGround(BlockController blockController) { blockFellOnGround?.Invoke(blockController); }
+        public static VoidDelegate gameStarted = VoidIdle;
+        public static VoidDelegate playerPassEndOfSegment = VoidIdle;
+        public static BlockDelegate playerLandedOnBlock = BlockIdle;
+        public static BlockDelegate blockFellOnGround = BlockIdle;        
 
+        //idle methods
+        static void VoidIdle() { }
+        static void BlockIdle(BlockController blockController) { }
     }
 }

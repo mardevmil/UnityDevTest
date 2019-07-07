@@ -1,4 +1,4 @@
-﻿namespace mardevmil.UI
+﻿namespace JumpGame
 {
     using UnityEngine;
     using System;

@@ -1,4 +1,4 @@
-﻿namespace mardevmil.UI
+﻿namespace JumpGame
 {
     using System;
     using System.Collections;
@@ -43,11 +43,6 @@
         {
             base.Awake();
             Initialize();
-        }
-
-        private void Start()
-        {
-            ShowWindow("UI_MAIN_MENU"); // just for test, it is job for GameManager (to show first window)
         }
 
         #region Initialization

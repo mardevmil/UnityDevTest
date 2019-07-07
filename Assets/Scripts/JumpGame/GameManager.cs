@@ -8,6 +8,14 @@
     public class GameManager : Singleton<GameManager>
     {
         #region vars
+
+        public enum GameStatus
+        {
+            OnStart,
+            Play,
+            Paused,
+        }
+
         [SerializeField]
         private Transform _startPoint;
         [SerializeField]
@@ -17,7 +25,10 @@
 
         [SerializeField]
         private AutoCam _autoCam;
-        
+
+        [HideInInspector]
+        public GameStatus gameStatus = GameStatus.OnStart;
+
         [HideInInspector]
         public BlockController currentBlockController;
         [HideInInspector]
@@ -49,10 +60,14 @@
         #region Mono
         private void Start()
         {
+            if(gameStatus == GameStatus.OnStart)
+                GuiManager.Instance.ShowWindow("UI_IN_GAME");
+
             _groundPool = new ObjectPooler(_levelData.groundPrefab, 10);
             _blocksPool = new ObjectPooler(_levelData.blockPrefab, 20);
             _bottomPool = new ObjectPooler(_levelData.bottomPrefab, 20);
 
+            EventManager.gameStarted += OnGameStarted;
             EventManager.playerLandedOnBlock += OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment += OnPlayerPassEndOfSegment;
             EventManager.blockFellOnGround += OnBlockFellOnGround;
@@ -61,6 +76,7 @@
 
         private void OnDestroy()
         {
+            EventManager.gameStarted -= OnGameStarted;
             EventManager.playerLandedOnBlock -= OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment -= OnPlayerPassEndOfSegment;
             EventManager.blockFellOnGround -= OnBlockFellOnGround;
@@ -68,6 +84,12 @@
         #endregion
 
         #region Listeners
+        private void OnGameStarted()
+        {
+            if (playerController != null)
+                playerController.Release();
+        }
+
         private void OnPlayerLandedOnBlock(BlockController blockController)
         {
             currentBlockController = blockController;

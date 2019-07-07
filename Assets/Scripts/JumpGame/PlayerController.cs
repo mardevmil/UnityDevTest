@@ -37,7 +37,19 @@
             state = PlayerState.Landed;
         }
 
-        // Update is called once per frame
+        public void Release()
+        {
+            Rigidbody.useGravity = true;
+            Rigidbody.isKinematic = false;
+        }
+
+        public void ResetPhysic()
+        {
+            Rigidbody.useGravity = false;
+            Rigidbody.isKinematic = true;
+        }
+
+        // Update is called once per frame // temp code until implement Input Controller
         void Update()
         {
             if(Input.GetKey(KeyCode.Mouse0))
