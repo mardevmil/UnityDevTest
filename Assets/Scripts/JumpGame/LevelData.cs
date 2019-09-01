@@ -43,7 +43,7 @@
                         id = j,
                         segmentId = i,
                         height = Random.Range(10f, 12f),
-                        width = Random.Range(2f, 4f),
+                        width = Random.Range(4f, 5f),
                         color = _colors[Random.Range(0,3)]                        
                     };
 

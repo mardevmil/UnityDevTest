@@ -12,18 +12,36 @@
         }
         public PlayerState state = PlayerState.OnSpawnPoint;
         public Rigidbody Rigidbody { get; private set; }
+        public Animator Animator { get; private set; }
 
-        // Start is called before the first frame update
         void Start()
         {
             EventManager.playerLandedOnBlock += OnPlayerLandedOnBlock;
 
             Rigidbody = GetComponent<Rigidbody>();
-            if(Rigidbody)
+            Animator = GetComponent<Animator>();
+
+            if (Rigidbody)
             {
                 //_selfRigidbody.isKinematic = false;
                 Rigidbody.useGravity = true;
             }
+        }
+
+        // Update is called once per frame // temp code until implement Input Controller
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                if (Rigidbody && state == PlayerState.Landed)
+                {
+                    //Debug.LogError("***** Animator.SetTrigger Jump");
+                    Animator.SetTrigger("Jump");
+                }
+            }
+
+            if (state == PlayerState.Landed && GameManager.Instance.currentBlockController != null)
+                transform.rotation = Quaternion.Lerp(transform.rotation, GameManager.Instance.currentBlockController.transform.rotation, Time.deltaTime);
         }
 
         private void OnDestroy()
@@ -35,6 +53,7 @@
         {            
             Rigidbody.drag = 2f;            
             state = PlayerState.Landed;
+            Animator.SetTrigger("Run");
         }
 
         public void Release()
@@ -49,26 +68,21 @@
             Rigidbody.isKinematic = true;
         }
 
-        // Update is called once per frame // temp code until implement Input Controller
-        void Update()
+        public void Jump()
         {
-            if(Input.GetKey(KeyCode.Mouse0))
+            if (Rigidbody && state == PlayerState.Landed)
             {
-                if (Rigidbody && state == PlayerState.Landed)
+                var currentBlock = GameManager.Instance.currentBlockController;
+                var nextBlock = GameManager.Instance.currentBlockController.nextBlock;
+                if (currentBlock != null && nextBlock != null)
                 {
-                    var currentBlock = GameManager.Instance.currentBlockController;
-                    var nextBlock = GameManager.Instance.currentBlockController.nextBlock;
-                    if (currentBlock != null && nextBlock != null)
-                    {
-                        Rigidbody.drag = 0f;                        
-                        var target = nextBlock.prefectLandingPoint;
-                        var angle = currentBlock.Angle;                        
-                        Rigidbody.velocity = GameManager.Instance.CalculateVelocity(target, 65f);                        
-                        state = PlayerState.Jumped;
-                    }
+                    Rigidbody.drag = 0f;
+                    var target = nextBlock.prefectLandingPoint;
+                    var angle = currentBlock.Angle;
+                    Rigidbody.velocity = GameManager.Instance.CalculateVelocity(target, 65f);
+                    state = PlayerState.Jumped;                    
                 }
-                
             }
-        }
+        }        
     }
 }

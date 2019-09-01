@@ -145,6 +145,7 @@ MonoBehaviour:
   _levelData: {fileID: 11400000, guid: 5536e0c1e5e1f0645b8c7b3da11dab76, type: 2}
   _gameManagerData: {fileID: 11400000, guid: d6584af81af39d6469d65c9ed447c26e, type: 2}
   _autoCam: {fileID: 0}
+  gameStatus: 0
   currentBlockController: {fileID: 0}
   playerController: {fileID: 0}
 --- !u!4 &748162384

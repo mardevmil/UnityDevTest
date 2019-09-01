@@ -18,7 +18,7 @@ MonoBehaviour:
     type: 3}
   bottomPrefab: {fileID: 3568202114762575119, guid: 0c6987d42cc20a4419c0f134393e5946,
     type: 3}
-  playerPrefab: {fileID: 6494986580525827979, guid: c5a440d34165a7e489f79825be0c314e,
+  playerPrefab: {fileID: 3928287266009462243, guid: 3cd7f69ece71c9245947516f8f2a92d5,
     type: 3}
   offsetX: 2.01
   offsetZ: 20
@@ -28,1398 +28,1398 @@ MonoBehaviour:
     blocks:
     - id: 0
       segmentId: 0
-      height: 11.69782
-      width: 3.206594
+      height: 10.272714
+      width: 4.2206016
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 0
-      height: 11.748326
-      width: 2.3247008
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.855128
+      width: 4.8854294
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 0
-      height: 10.20466
-      width: 2.1673243
+      height: 10.374258
+      width: 4.20094
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 0
-      height: 10.868919
-      width: 2.1027381
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.613976
+      width: 4.878106
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 0
-      height: 11.350897
-      width: 3.6973336
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.265926
+      width: 4.9181447
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 1
+    difficulty: 2
+    blocks:
+    - id: 0
+      segmentId: 1
+      height: 11.673078
+      width: 4.964441
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 1
+      segmentId: 1
+      height: 11.822392
+      width: 4.7682233
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 2
+      segmentId: 1
+      height: 10.6380825
+      width: 4.9457235
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 3
+      segmentId: 1
+      height: 11.770145
+      width: 4.0414324
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 4
+      segmentId: 1
+      height: 11.636565
+      width: 4.724035
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - id: 2
     difficulty: 0
     blocks:
     - id: 0
-      segmentId: 1
-      height: 11.226343
-      width: 3.1064162
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      segmentId: 2
+      height: 10.587784
+      width: 4.4646378
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
-      segmentId: 1
-      height: 11.533169
-      width: 3.1468172
-      color: {r: 0, g: 0, b: 1, a: 1}
+      segmentId: 2
+      height: 10.247353
+      width: 4.566326
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
-      segmentId: 1
-      height: 11.735544
-      width: 3.9844668
+      segmentId: 2
+      height: 11.721062
+      width: 4.3020177
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
-      segmentId: 1
-      height: 11.492931
-      width: 2.8088675
-      color: {r: 0, g: 0, b: 1, a: 1}
+      segmentId: 2
+      height: 11.697614
+      width: 4.583333
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
-      segmentId: 1
-      height: 10.789879
-      width: 2.4183114
-      color: {r: 0, g: 0, b: 1, a: 1}
-  - id: 2
+      segmentId: 2
+      height: 11.487319
+      width: 4.3419676
+      color: {r: 1, g: 0, b: 0, a: 1}
+  - id: 3
     difficulty: 2
     blocks:
     - id: 0
-      segmentId: 2
-      height: 10.285601
-      width: 3.8168175
-      color: {r: 0, g: 0, b: 1, a: 1}
+      segmentId: 3
+      height: 11.470355
+      width: 4.461748
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
-      segmentId: 2
-      height: 11.89461
-      width: 3.272648
-      color: {r: 1, g: 0, b: 0, a: 1}
+      segmentId: 3
+      height: 11.520649
+      width: 4.121167
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
-      segmentId: 2
-      height: 10.170179
-      width: 3.4254117
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      segmentId: 3
+      height: 11.423828
+      width: 4.6510005
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
-      segmentId: 2
-      height: 10.0917225
-      width: 3.0668797
-      color: {r: 1, g: 0, b: 0, a: 1}
+      segmentId: 3
+      height: 11.9441805
+      width: 4.3375864
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
-      segmentId: 2
-      height: 11.322563
-      width: 3.8962739
+      segmentId: 3
+      height: 10.192271
+      width: 4.4623103
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - id: 3
+  - id: 4
     difficulty: 1
     blocks:
     - id: 0
-      segmentId: 3
-      height: 11.860681
-      width: 3.3541129
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - id: 1
-      segmentId: 3
-      height: 11.264915
-      width: 2.4483373
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 2
-      segmentId: 3
-      height: 10.435112
-      width: 2.1754372
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - id: 3
-      segmentId: 3
-      height: 11.568487
-      width: 2.0231817
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 4
-      segmentId: 3
-      height: 10.386657
-      width: 2.5087986
-      color: {r: 0, g: 0, b: 1, a: 1}
-  - id: 4
-    difficulty: 2
-    blocks:
-    - id: 0
       segmentId: 4
-      height: 11.831768
-      width: 3.4475758
+      height: 10.366968
+      width: 4.8785305
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 4
-      height: 11.593699
-      width: 2.4679205
+      height: 11.84592
+      width: 4.0498853
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 4
-      height: 10.859297
-      width: 2.8647184
+      height: 10.076056
+      width: 4.6596894
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 4
-      height: 11.668042
-      width: 3.185494
+      height: 10.257843
+      width: 4.4526405
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 4
-      height: 11.857028
-      width: 2.4530206
+      height: 10.481768
+      width: 4.2134004
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 5
+    difficulty: 1
+    blocks:
+    - id: 0
+      segmentId: 5
+      height: 10.4441395
+      width: 4.547641
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 1
+      segmentId: 5
+      height: 11.775506
+      width: 4.909616
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 2
+      segmentId: 5
+      height: 10.021711
+      width: 4.9430475
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 3
+      segmentId: 5
+      height: 11.246305
+      width: 4.1376524
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 4
+      segmentId: 5
+      height: 11.427381
+      width: 4.7894707
+      color: {r: 0, g: 0, b: 1, a: 1}
+  - id: 6
     difficulty: 2
     blocks:
     - id: 0
-      segmentId: 5
-      height: 10.550358
-      width: 2.2247183
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 1
-      segmentId: 5
-      height: 10.361214
-      width: 3.5737762
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 2
-      segmentId: 5
-      height: 11.321521
-      width: 3.6959872
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 3
-      segmentId: 5
-      height: 10.338364
-      width: 3.791228
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 4
-      segmentId: 5
-      height: 10.267354
-      width: 3.9128385
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - id: 6
-    difficulty: 1
-    blocks:
-    - id: 0
       segmentId: 6
-      height: 11.896705
-      width: 2.2297943
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.093079
+      width: 4.5633545
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 6
-      height: 10.499992
-      width: 3.917349
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.768991
+      width: 4.36364
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 6
-      height: 10.602928
-      width: 3.4043458
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.137709
+      width: 4.6992044
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 6
-      height: 11.360695
-      width: 3.8430624
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.892141
+      width: 4.3840613
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 6
-      height: 11.780143
-      width: 3.6631384
+      height: 10.160616
+      width: 4.92784
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 7
-    difficulty: 1
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 7
-      height: 11.201272
-      width: 3.1351643
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.753193
+      width: 4.908761
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 7
-      height: 10.684748
-      width: 3.3714962
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.558124
+      width: 4.403409
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 7
-      height: 11.64781
-      width: 2.685113
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.179987
+      width: 4.6418605
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 7
-      height: 10.090836
-      width: 2.3066885
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.107883
+      width: 4.7378635
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 7
-      height: 10.9452
-      width: 3.4012759
+      height: 11.636468
+      width: 4.077771
       color: {r: 1, g: 0, b: 0, a: 1}
   - id: 8
     difficulty: 1
     blocks:
     - id: 0
       segmentId: 8
-      height: 10.815063
-      width: 2.2363815
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.671087
+      width: 4.555376
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 8
-      height: 10.221775
-      width: 3.079935
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.194391
+      width: 4.8777514
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 8
-      height: 10.926062
-      width: 2.88944
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.268505
+      width: 4.295206
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 8
-      height: 11.110414
-      width: 2.4360726
+      height: 11.061809
+      width: 4.1218357
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 8
-      height: 11.054832
-      width: 3.551461
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.69216
+      width: 4.070874
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 9
-    difficulty: 0
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 9
-      height: 10.122582
-      width: 2.8002386
+      height: 11.908855
+      width: 4.5811195
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 9
-      height: 11.851461
-      width: 2.9440174
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.91561
+      width: 4.506927
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 9
-      height: 10.645418
-      width: 2.4934497
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.817604
+      width: 4.26579
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 9
-      height: 11.422915
-      width: 2.1433249
+      height: 11.520088
+      width: 4.6655345
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 9
-      height: 10.584872
-      width: 2.3892114
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.161596
+      width: 4.432516
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 10
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 10
-      height: 10.964077
-      width: 2.6678405
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.540882
+      width: 4.516204
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 10
-      height: 10.03506
-      width: 2.1427963
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.012756
+      width: 4.1455107
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 10
-      height: 11.089605
-      width: 3.5086882
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.121147
+      width: 4.5691013
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 10
-      height: 10.075051
-      width: 2.6158147
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.366617
+      width: 4.7719254
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 10
-      height: 11.456882
-      width: 3.9255512
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.650023
+      width: 4.947603
+      color: {r: 1, g: 0, b: 0, a: 1}
   - id: 11
-    difficulty: 2
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 11
-      height: 11.494128
-      width: 2.952355
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.210981
+      width: 4.305343
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 11
-      height: 10.196164
-      width: 3.0389576
+      height: 10.958461
+      width: 4.8035808
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 11
-      height: 11.534347
-      width: 2.1384923
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.043497
+      width: 4.1206155
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 11
-      height: 11.433533
-      width: 3.8619308
+      height: 11.972201
+      width: 4.270713
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 11
-      height: 10.935939
-      width: 3.4058535
+      height: 10.613546
+      width: 4.7818546
       color: {r: 1, g: 0, b: 0, a: 1}
   - id: 12
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 12
-      height: 10.827893
-      width: 3.829986
+      height: 10.063936
+      width: 4.0945177
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 12
-      height: 11.211929
-      width: 2.2270896
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.543639
+      width: 4.0209436
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 12
-      height: 10.433381
-      width: 2.821601
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.068622
+      width: 4.970583
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 12
-      height: 10.81333
-      width: 3.8890343
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.578454
+      width: 4.726191
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 12
-      height: 10.329103
-      width: 3.8576527
+      height: 11.382517
+      width: 4.702502
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 13
-    difficulty: 0
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 13
-      height: 10.63722
-      width: 2.9287744
+      height: 10.092732
+      width: 4.2362933
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 13
-      height: 11.922331
-      width: 3.0797405
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.182194
+      width: 4.258218
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 13
-      height: 10.330451
-      width: 3.7463617
+      height: 11.055725
+      width: 4.9984326
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 13
-      height: 11.633615
-      width: 3.155282
+      height: 11.903416
+      width: 4.164919
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 13
-      height: 10.801901
-      width: 3.0117674
+      height: 10.159499
+      width: 4.074008
       color: {r: 1, g: 0, b: 0, a: 1}
   - id: 14
-    difficulty: 0
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 14
-      height: 10.392612
-      width: 3.4196692
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.181726
+      width: 4.935872
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 14
-      height: 11.628409
-      width: 2.3378048
+      height: 10.440029
+      width: 4.7072554
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 14
-      height: 10.017546
-      width: 2.830752
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.506428
+      width: 4.340564
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 14
-      height: 11.945932
-      width: 2.5663962
+      height: 10.594608
+      width: 4.119113
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 14
-      height: 11.043805
-      width: 3.1521935
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.793663
+      width: 4.047467
+      color: {r: 1, g: 0, b: 0, a: 1}
   - id: 15
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 15
-      height: 11.326292
-      width: 3.5727038
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.053647
+      width: 4.564988
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 15
-      height: 10.841235
-      width: 3.9424567
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.770067
+      width: 4.1819515
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 15
-      height: 10.452694
-      width: 3.428584
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.419281
+      width: 4.7503004
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 15
-      height: 11.71659
-      width: 2.312008
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.298092
+      width: 4.8503256
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 15
-      height: 10.972158
-      width: 2.4708452
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.258827
+      width: 4.5178833
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 16
     difficulty: 2
     blocks:
     - id: 0
       segmentId: 16
-      height: 10.927067
-      width: 3.7467592
+      height: 10.87565
+      width: 4.0725117
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 16
-      height: 10.608244
-      width: 2.604114
+      height: 11.486218
+      width: 4.7919793
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 16
-      height: 10.549134
-      width: 2.1681569
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.691363
+      width: 4.585997
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 16
-      height: 10.447266
-      width: 3.9467072
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.349464
+      width: 4.6377945
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 16
-      height: 10.562416
-      width: 2.458254
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.709008
+      width: 4.198689
+      color: {r: 1, g: 0, b: 0, a: 1}
   - id: 17
     difficulty: 2
     blocks:
     - id: 0
       segmentId: 17
-      height: 11.044731
-      width: 2.124517
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.924263
+      width: 4.727787
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 17
-      height: 10.661489
-      width: 3.847696
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.433388
+      width: 4.8611364
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 17
-      height: 10.954188
-      width: 3.123969
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.187668
+      width: 4.7591443
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 17
-      height: 10.474044
-      width: 3.9073555
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.516611
+      width: 4.115074
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 17
-      height: 10.934202
-      width: 3.990039
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.5168915
+      width: 4.035935
+      color: {r: 1, g: 0, b: 0, a: 1}
   - id: 18
+    difficulty: 0
+    blocks:
+    - id: 0
+      segmentId: 18
+      height: 10.2951355
+      width: 4.142438
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 1
+      segmentId: 18
+      height: 11.25704
+      width: 4.053883
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 2
+      segmentId: 18
+      height: 11.923429
+      width: 4.675459
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 3
+      segmentId: 18
+      height: 10.840492
+      width: 4.398208
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 4
+      segmentId: 18
+      height: 11.467107
+      width: 4.5797443
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - id: 19
     difficulty: 1
     blocks:
     - id: 0
-      segmentId: 18
-      height: 11.085855
-      width: 3.1307473
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      segmentId: 19
+      height: 10.682047
+      width: 4.4019575
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
-      segmentId: 18
-      height: 10.666044
-      width: 3.4188218
-      color: {r: 1, g: 0, b: 0, a: 1}
+      segmentId: 19
+      height: 11.225605
+      width: 4.2460003
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
-      segmentId: 18
-      height: 11.302454
-      width: 2.8217435
-      color: {r: 1, g: 0, b: 0, a: 1}
+      segmentId: 19
+      height: 11.915484
+      width: 4.2633486
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
-      segmentId: 18
-      height: 10.222956
-      width: 3.8223066
+      segmentId: 19
+      height: 11.573647
+      width: 4.0361643
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
-      segmentId: 18
-      height: 11.526189
-      width: 2.0078423
+      segmentId: 19
+      height: 11.998594
+      width: 4.5813246
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - id: 19
+  - id: 20
     difficulty: 0
     blocks:
     - id: 0
-      segmentId: 19
-      height: 10.62611
-      width: 3.5608084
+      segmentId: 20
+      height: 11.243183
+      width: 4.017781
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
-      segmentId: 19
-      height: 10.596997
-      width: 3.8197494
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      segmentId: 20
+      height: 11.84552
+      width: 4.127872
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
-      segmentId: 19
-      height: 10.578387
-      width: 3.4804194
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      segmentId: 20
+      height: 11.417803
+      width: 4.04883
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
-      segmentId: 19
-      height: 10.765804
-      width: 2.2722654
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - id: 4
-      segmentId: 19
-      height: 11.818256
-      width: 2.781588
+      segmentId: 20
+      height: 11.867895
+      width: 4.130762
       color: {r: 1, g: 0, b: 0, a: 1}
-  - id: 20
+    - id: 4
+      segmentId: 20
+      height: 11.626589
+      width: 4.340455
+      color: {r: 0, g: 0, b: 1, a: 1}
+  - id: 21
     difficulty: 2
     blocks:
     - id: 0
-      segmentId: 20
-      height: 10.134357
-      width: 3.4498618
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 1
-      segmentId: 20
-      height: 10.231044
-      width: 2.1267686
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - id: 2
-      segmentId: 20
-      height: 11.636918
-      width: 2.7147937
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 3
-      segmentId: 20
-      height: 11.613955
-      width: 2.3586245
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 4
-      segmentId: 20
-      height: 10.193645
-      width: 3.0114126
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - id: 21
-    difficulty: 0
-    blocks:
-    - id: 0
       segmentId: 21
-      height: 10.908125
-      width: 2.1611369
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.171973
+      width: 4.5095015
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 21
-      height: 11.289217
-      width: 2.3435993
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.408115
+      width: 4.6162353
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 21
-      height: 11.481579
-      width: 3.9482784
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.638265
+      width: 4.1851707
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 21
-      height: 11.539466
-      width: 2.7419376
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.428648
+      width: 4.81901
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 21
-      height: 11.336689
-      width: 2.259309
+      height: 11.171072
+      width: 4.9415035
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 22
-    difficulty: 0
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 22
-      height: 11.899776
-      width: 2.4139333
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.78834
+      width: 4.6826763
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 22
-      height: 10.763018
-      width: 2.179011
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.018719
+      width: 4.445612
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 22
-      height: 10.60543
-      width: 2.7456145
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.45331
+      width: 4.279585
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 22
-      height: 10.604957
-      width: 3.1571555
+      height: 11.045025
+      width: 4.0859804
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 22
-      height: 11.170781
-      width: 2.852322
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.999569
+      width: 4.1305747
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 23
     difficulty: 2
     blocks:
     - id: 0
       segmentId: 23
-      height: 11.8225565
-      width: 3.2492433
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.182606
+      width: 4.06876
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 23
-      height: 10.78422
-      width: 2.8271246
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.801744
+      width: 4.676584
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 23
-      height: 10.921457
-      width: 2.3632317
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.718353
+      width: 4.0133767
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 23
-      height: 11.01821
-      width: 2.6795435
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.142214
+      width: 4.874399
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 23
-      height: 10.15015
-      width: 2.8806586
+      height: 10.24827
+      width: 4.6843762
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 24
-    difficulty: 2
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 24
-      height: 11.477391
-      width: 2.6674743
+      height: 10.541083
+      width: 4.597831
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 24
-      height: 10.767764
-      width: 3.719524
+      height: 10.113762
+      width: 4.543517
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 24
-      height: 11.04801
-      width: 3.5354574
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 3
-      segmentId: 24
-      height: 10.13031
-      width: 3.6135216
+      height: 10.798592
+      width: 4.710141
       color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 3
+      segmentId: 24
+      height: 11.978977
+      width: 4.555358
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 24
-      height: 11.025818
-      width: 3.974248
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.437265
+      width: 4.502967
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 25
-    difficulty: 2
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 25
-      height: 11.463701
-      width: 3.450316
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.448795
+      width: 4.6032376
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 25
-      height: 11.620756
-      width: 3.970098
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.716612
+      width: 4.2868752
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 25
-      height: 10.184463
-      width: 3.8662171
+      height: 10.865452
+      width: 4.7468185
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 25
-      height: 10.537683
-      width: 2.0705612
+      height: 11.197996
+      width: 4.575178
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 25
-      height: 11.664132
-      width: 2.4093797
+      height: 11.897571
+      width: 4.87073
       color: {r: 1, g: 0, b: 0, a: 1}
   - id: 26
-    difficulty: 2
-    blocks:
-    - id: 0
-      segmentId: 26
-      height: 11.270884
-      width: 3.1848545
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 1
-      segmentId: 26
-      height: 11.983261
-      width: 2.4140038
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 2
-      segmentId: 26
-      height: 11.725692
-      width: 3.7121198
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 3
-      segmentId: 26
-      height: 10.343573
-      width: 2.925259
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 4
-      segmentId: 26
-      height: 11.363458
-      width: 3.1008487
-      color: {r: 0, g: 0, b: 1, a: 1}
-  - id: 27
     difficulty: 0
     blocks:
     - id: 0
+      segmentId: 26
+      height: 11.82487
+      width: 4.349863
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 1
+      segmentId: 26
+      height: 11.24268
+      width: 4.5131364
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 2
+      segmentId: 26
+      height: 11.433579
+      width: 4.0216675
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 3
+      segmentId: 26
+      height: 11.627136
+      width: 4.762856
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 4
+      segmentId: 26
+      height: 11.044237
+      width: 4.14777
+      color: {r: 0, g: 0, b: 1, a: 1}
+  - id: 27
+    difficulty: 1
+    blocks:
+    - id: 0
       segmentId: 27
-      height: 10.621418
-      width: 2.6753821
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.799554
+      width: 4.1757917
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 27
-      height: 10.875408
-      width: 2.628478
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.582741
+      width: 4.5297766
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 27
-      height: 10.035553
-      width: 3.908233
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.755685
+      width: 4.970421
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 27
-      height: 10.732707
-      width: 2.555653
+      height: 11.783245
+      width: 4.8239636
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 27
-      height: 11.4527
-      width: 3.9590707
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.186989
+      width: 4.4245176
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 28
-    difficulty: 2
+    difficulty: 0
     blocks:
     - id: 0
       segmentId: 28
-      height: 10.053147
-      width: 2.2293212
+      height: 11.600668
+      width: 4.831853
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 28
-      height: 10.524546
-      width: 3.6630998
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.30629
+      width: 4.431383
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 28
-      height: 10.853621
-      width: 3.098064
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.459316
+      width: 4.017909
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 28
-      height: 10.516173
-      width: 3.0028439
+      height: 10.250056
+      width: 4.893277
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 28
-      height: 10.1627445
-      width: 3.0452633
+      height: 10.610294
+      width: 4.2222524
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 29
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 29
-      height: 11.358213
-      width: 3.2229877
+      height: 11.268906
+      width: 4.0533857
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 29
-      height: 10.688416
-      width: 2.8836193
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.526311
+      width: 4.1762047
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 29
-      height: 10.95372
-      width: 2.854381
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.230797
+      width: 4.5588784
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 29
-      height: 11.468914
-      width: 2.2907097
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.471154
+      width: 4.2253385
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 29
-      height: 11.571233
-      width: 3.3619685
+      height: 11.439208
+      width: 4.5721307
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 30
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 30
-      height: 10.098444
-      width: 2.595333
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.874841
+      width: 4.589308
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 30
-      height: 11.829486
-      width: 3.9288306
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.0882015
+      width: 4.613199
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 30
-      height: 11.952433
-      width: 2.0301695
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.971445
+      width: 4.3851585
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 30
-      height: 11.266306
-      width: 3.7648497
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.867339
+      width: 4.238433
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 30
-      height: 10.464958
-      width: 3.8534293
+      height: 11.700389
+      width: 4.7022963
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 31
-    difficulty: 2
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 31
-      height: 10.734922
-      width: 3.40978
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.251543
+      width: 4.9978533
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 31
-      height: 11.18829
-      width: 2.7618985
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.7661705
+      width: 4.378913
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 31
-      height: 11.634784
-      width: 2.2734385
+      height: 10.285624
+      width: 4.395722
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 31
-      height: 10.95649
-      width: 2.6830525
+      height: 11.906018
+      width: 4.395586
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 31
-      height: 11.779452
-      width: 3.1454983
+      height: 11.738951
+      width: 4.0909586
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 32
+    difficulty: 1
+    blocks:
+    - id: 0
+      segmentId: 32
+      height: 11.278322
+      width: 4.1123753
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 1
+      segmentId: 32
+      height: 11.454624
+      width: 4.5637884
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 2
+      segmentId: 32
+      height: 11.185477
+      width: 4.756592
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 3
+      segmentId: 32
+      height: 11.94772
+      width: 4.2389684
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 4
+      segmentId: 32
+      height: 11.392464
+      width: 4.328701
+      color: {r: 0, g: 0, b: 1, a: 1}
+  - id: 33
     difficulty: 2
     blocks:
     - id: 0
-      segmentId: 32
-      height: 11.273676
-      width: 2.5444283
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 1
-      segmentId: 32
-      height: 10.832219
-      width: 2.3544967
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 2
-      segmentId: 32
-      height: 10.370546
-      width: 2.5381236
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 3
-      segmentId: 32
-      height: 11.121508
-      width: 2.4832034
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 4
-      segmentId: 32
-      height: 10.181085
-      width: 3.2654128
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  - id: 33
-    difficulty: 0
-    blocks:
-    - id: 0
       segmentId: 33
-      height: 11.389442
-      width: 2.6340714
+      height: 10.630783
+      width: 4.1448765
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 33
-      height: 11.036771
-      width: 2.9122553
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.134659
+      width: 4.5738945
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 33
-      height: 11.796885
-      width: 2.8175592
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.578613
+      width: 4.2092056
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 33
-      height: 11.07703
-      width: 2.5806494
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.765499
+      width: 4.4908123
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 33
-      height: 10.496609
-      width: 2.609212
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.60516
+      width: 4.860524
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 34
-    difficulty: 0
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 34
-      height: 10.206636
-      width: 3.1043305
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.9449625
+      width: 4.3762865
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 34
-      height: 11.772485
-      width: 2.8622808
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.953562
+      width: 4.5511484
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 34
-      height: 10.319541
-      width: 3.3573365
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.552439
+      width: 4.4309235
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 34
-      height: 10.214201
-      width: 2.4928377
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.714591
+      width: 4.122507
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 34
-      height: 10.14567
-      width: 2.3065536
+      height: 11.286854
+      width: 4.8283725
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 35
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 35
-      height: 10.732296
-      width: 3.2523634
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.902851
+      width: 4.149533
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 35
-      height: 10.683528
-      width: 2.168996
+      height: 11.488295
+      width: 4.764913
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 35
-      height: 11.269289
-      width: 3.0576363
+      height: 10.697158
+      width: 4.657467
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 35
-      height: 11.306856
-      width: 2.3757017
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.225121
+      width: 4.6197667
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 35
-      height: 10.047187
-      width: 2.9715896
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.018608
+      width: 4.5176296
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 36
     difficulty: 2
     blocks:
     - id: 0
       segmentId: 36
-      height: 11.595865
-      width: 3.265016
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.523937
+      width: 4.1332097
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 36
-      height: 10.040061
-      width: 2.0226653
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.210655
+      width: 4.9619656
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 36
-      height: 10.82584
-      width: 3.837705
+      height: 10.682413
+      width: 4.5525455
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 36
-      height: 11.305824
-      width: 3.6056588
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.997332
+      width: 4.2578716
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 36
-      height: 10.585331
-      width: 2.559238
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.478044
+      width: 4.512694
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 37
+    difficulty: 0
+    blocks:
+    - id: 0
+      segmentId: 37
+      height: 11.568249
+      width: 4.8077354
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 1
+      segmentId: 37
+      height: 10.062168
+      width: 4.6699405
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 2
+      segmentId: 37
+      height: 10.055595
+      width: 4.02629
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 3
+      segmentId: 37
+      height: 11.315618
+      width: 4.5690594
+      color: {r: 0, g: 0, b: 1, a: 1}
+    - id: 4
+      segmentId: 37
+      height: 11.328099
+      width: 4.0432844
+      color: {r: 0, g: 0, b: 1, a: 1}
+  - id: 38
     difficulty: 2
     blocks:
     - id: 0
-      segmentId: 37
-      height: 11.433435
-      width: 3.8898294
+      segmentId: 38
+      height: 10.087719
+      width: 4.377987
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
-      segmentId: 37
-      height: 11.630047
-      width: 2.2647755
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 2
-      segmentId: 37
-      height: 11.26553
-      width: 2.0801022
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 3
-      segmentId: 37
-      height: 10.631563
-      width: 2.0055885
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 4
-      segmentId: 37
-      height: 10.450195
-      width: 3.071114
-      color: {r: 1, g: 0, b: 0, a: 1}
-  - id: 38
-    difficulty: 1
-    blocks:
-    - id: 0
       segmentId: 38
-      height: 10.559162
-      width: 3.710577
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-    - id: 1
-      segmentId: 38
-      height: 10.495907
-      width: 3.8690195
+      height: 11.336161
+      width: 4.1961308
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 38
-      height: 11.889263
-      width: 2.662046
+      height: 10.8243885
+      width: 4.1697593
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 38
-      height: 10.633555
-      width: 2.0262558
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.707081
+      width: 4.8935637
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 38
-      height: 11.372427
-      width: 3.6775708
+      height: 10.812184
+      width: 4.4107018
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 39
-    difficulty: 0
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 39
-      height: 11.412228
-      width: 3.4960225
+      height: 11.409714
+      width: 4.820113
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 39
-      height: 10.713486
-      width: 2.8509326
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.39842
+      width: 4.5380077
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 39
-      height: 11.934978
-      width: 3.7673762
+      height: 11.60737
+      width: 4.9429154
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 39
-      height: 10.078424
-      width: 2.3559647
+      height: 11.392188
+      width: 4.202297
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 39
-      height: 11.046057
-      width: 2.735248
+      height: 11.926121
+      width: 4.08266
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 40
-    difficulty: 0
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 40
-      height: 10.531276
-      width: 2.423955
+      height: 10.332895
+      width: 4.7618637
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 40
-      height: 10.435879
-      width: 2.5028358
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.571724
+      width: 4.824144
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 40
-      height: 10.924888
-      width: 3.0634122
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.562597
+      width: 4.696288
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 40
-      height: 10.64929
-      width: 3.301029
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.933853
+      width: 4.1715918
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 40
-      height: 10.820742
-      width: 2.8279624
+      height: 11.221119
+      width: 4.1568766
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 41
     difficulty: 1
     blocks:
     - id: 0
       segmentId: 41
-      height: 11.949978
-      width: 3.2462258
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.236406
+      width: 4.9793363
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 41
-      height: 10.432238
-      width: 2.1316345
+      height: 10.992136
+      width: 4.4451933
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 41
-      height: 11.338425
-      width: 2.742197
+      height: 10.806828
+      width: 4.415558
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 41
-      height: 10.254904
-      width: 2.1402833
+      height: 10.634078
+      width: 4.5851374
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 41
-      height: 11.532197
-      width: 2.8766026
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.327598
+      width: 4.6266947
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 42
-    difficulty: 2
+    difficulty: 1
     blocks:
     - id: 0
       segmentId: 42
-      height: 10.213398
-      width: 2.3719897
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.140406
+      width: 4.7896237
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 42
-      height: 11.734411
-      width: 2.8898945
+      height: 10.908949
+      width: 4.9590993
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 42
-      height: 10.137178
-      width: 3.069292
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.161299
+      width: 4.5156555
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 3
       segmentId: 42
-      height: 10.235228
-      width: 2.5272927
+      height: 10.590719
+      width: 4.563924
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 42
-      height: 10.598715
-      width: 2.7655525
+      height: 10.970877
+      width: 4.331927
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 43
+    difficulty: 2
+    blocks:
+    - id: 0
+      segmentId: 43
+      height: 11.201752
+      width: 4.3317976
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    - id: 1
+      segmentId: 43
+      height: 11.316088
+      width: 4.868679
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 2
+      segmentId: 43
+      height: 10.748278
+      width: 4.874808
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 3
+      segmentId: 43
+      height: 11.40228
+      width: 4.0215693
+      color: {r: 1, g: 0, b: 0, a: 1}
+    - id: 4
+      segmentId: 43
+      height: 10.20779
+      width: 4.7450027
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - id: 44
     difficulty: 0
     blocks:
     - id: 0
-      segmentId: 43
-      height: 11.658213
-      width: 2.1253319
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 1
-      segmentId: 43
-      height: 11.571626
-      width: 3.7730522
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 2
-      segmentId: 43
-      height: 11.643996
-      width: 3.9596455
-      color: {r: 1, g: 0, b: 0, a: 1}
-    - id: 3
-      segmentId: 43
-      height: 11.730229
-      width: 2.7515826
-      color: {r: 0, g: 0, b: 1, a: 1}
-    - id: 4
-      segmentId: 43
-      height: 10.806069
-      width: 3.3945258
-      color: {r: 1, g: 0, b: 0, a: 1}
-  - id: 44
-    difficulty: 2
-    blocks:
-    - id: 0
       segmentId: 44
-      height: 11.984892
-      width: 3.7394767
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.724655
+      width: 4.1442647
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 44
-      height: 11.120029
-      width: 3.2636154
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.863884
+      width: 4.035236
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 44
-      height: 11.10568
-      width: 2.5258603
+      height: 10.808561
+      width: 4.8715963
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 44
-      height: 11.805794
-      width: 3.3154895
+      height: 10.769463
+      width: 4.13983
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 44
-      height: 11.893558
-      width: 3.5267727
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.196665
+      width: 4.253998
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 45
     difficulty: 1
     blocks:
     - id: 0
       segmentId: 45
-      height: 11.933834
-      width: 3.6184103
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.354101
+      width: 4.750949
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 45
-      height: 11.0576
-      width: 2.3674068
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.6531105
+      width: 4.3662868
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 45
-      height: 11.345444
-      width: 3.6443586
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.341024
+      width: 4.986657
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 45
-      height: 10.8245945
-      width: 3.8461444
+      height: 11.488641
+      width: 4.4741116
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 45
-      height: 11.454287
-      width: 3.82724
+      height: 11.555174
+      width: 4.7042994
       color: {r: 0, g: 0, b: 1, a: 1}
   - id: 46
-    difficulty: 1
+    difficulty: 2
     blocks:
     - id: 0
       segmentId: 46
-      height: 11.853971
-      width: 2.2396758
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.738694
+      width: 4.9985347
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 1
       segmentId: 46
-      height: 11.454322
-      width: 3.434114
+      height: 10.914894
+      width: 4.348852
       color: {r: 1, g: 0, b: 0, a: 1}
     - id: 2
       segmentId: 46
-      height: 10.589095
-      width: 3.1127105
+      height: 11.528451
+      width: 4.086589
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 46
-      height: 11.399159
-      width: 2.857482
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.039911
+      width: 4.1731486
+      color: {r: 1, g: 0, b: 0, a: 1}
     - id: 4
       segmentId: 46
-      height: 11.07737
-      width: 2.1562047
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.766667
+      width: 4.9835773
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 47
     difficulty: 1
     blocks:
     - id: 0
       segmentId: 47
-      height: 11.560978
-      width: 2.3428025
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.135271
+      width: 4.8937006
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 1
       segmentId: 47
-      height: 10.865167
-      width: 3.7036994
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.817314
+      width: 4.320821
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 47
-      height: 11.872765
-      width: 2.3338947
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 10.967267
+      width: 4.437743
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 3
       segmentId: 47
-      height: 11.893829
-      width: 3.7686524
+      height: 11.915993
+      width: 4.412531
       color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 47
-      height: 11.689736
-      width: 3.5500743
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.670321
+      width: 4.164375
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   - id: 48
     difficulty: 0
     blocks:
     - id: 0
       segmentId: 48
-      height: 11.175053
-      width: 2.8133616
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.464934
+      width: 4.7680416
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 48
-      height: 11.022318
-      width: 3.0509877
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.271586
+      width: 4.8493843
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 2
       segmentId: 48
-      height: 11.445335
-      width: 2.8734436
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.835517
+      width: 4.1255307
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 48
-      height: 10.381256
-      width: 2.4268358
-      color: {r: 0, g: 0, b: 1, a: 1}
+      height: 11.183105
+      width: 4.8960915
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 4
       segmentId: 48
-      height: 10.450535
-      width: 3.9513028
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.703605
+      width: 4.055906
+      color: {r: 0, g: 0, b: 1, a: 1}
   - id: 49
     difficulty: 1
     blocks:
     - id: 0
       segmentId: 49
-      height: 11.35283
-      width: 3.0808625
+      height: 10.049175
+      width: 4.5071926
       color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 1
       segmentId: 49
-      height: 11.527298
-      width: 3.4111693
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 10.626956
+      width: 4.149723
+      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
     - id: 2
       segmentId: 49
-      height: 11.167604
-      width: 2.0142994
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 10.098787
+      width: 4.8020625
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 3
       segmentId: 49
-      height: 11.316481
-      width: 3.5436127
-      color: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+      height: 11.978704
+      width: 4.0611
+      color: {r: 0, g: 0, b: 1, a: 1}
     - id: 4
       segmentId: 49
-      height: 11.584429
-      width: 3.0525918
-      color: {r: 1, g: 0, b: 0, a: 1}
+      height: 11.68716
+      width: 4.9220138
+      color: {r: 0, g: 0, b: 1, a: 1}
