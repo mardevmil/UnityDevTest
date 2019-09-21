@@ -40,6 +40,12 @@
             GuiManager.ShowWindow("UI_SETTINGS_MENU");
         }
 
+        public override void OnFocused()
+        {
+            base.OnFocused();
+            _tapToPlayButton.gameObject.SetActive(true);
+        }
+
         private void OnTapToPlay()
         {
             if(GameManager.Instance.gameStatus == GameManager.GameStatus.OnStart)

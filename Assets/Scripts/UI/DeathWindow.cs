@@ -28,19 +28,20 @@
         }
 
         private void OnMainMenu()
-        {
-            GuiManager.HideWindow("UI_MAIN_MENU");
+        {            
             SceneManager.LoadScene("Init");
         }
 
         private void OnRevive()
-        {
-
+        {            
+            GameManager.Instance.Revive();            
         }
 
         private void OnRestart()
         {
-
+            GuiManager.HideWindow("UI_DEATH");
+            GameManager.Instance.Revive();
+            GuiManager.Instance.ShowWindow("UI_IN_GAME");
         }
     }
 }

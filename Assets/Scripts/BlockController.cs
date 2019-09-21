@@ -61,7 +61,7 @@
         {
             if (_selfRigidbody)
             {
-                _selfRigidbody.AddTorque(Vector3.right * 3f, ForceMode.VelocityChange);
+                _selfRigidbody.AddTorque(Vector3.right * 3.5f, ForceMode.VelocityChange);
             }
         }
 

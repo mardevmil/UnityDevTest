@@ -5,6 +5,12 @@ using System.Collections.Generic;
 public class GameManagerTest : MonoBehaviour
 {
     [SerializeField]
+    private Transform _velocityObject;
+
+    [SerializeField]
+    private Transform _target;
+
+    [SerializeField]
     private GameObject _testBlock;
     [SerializeField]
     private GameObject _testGround;
@@ -16,6 +22,8 @@ public class GameManagerTest : MonoBehaviour
     private Vector3 _groundPos = new Vector3(5f, 5f, 5f);
 
     private List<GameObject> _grounds = new List<GameObject>(10);
+
+    private bool debug = false;
 
     void Start()
     {
@@ -50,6 +58,22 @@ public class GameManagerTest : MonoBehaviour
                 _grounds.RemoveAt(index);
             }
         }
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            var rigbody = _velocityObject.GetComponent<Rigidbody>();
+            if(rigbody != null)
+            {
+                rigbody.velocity = PhysicMath.CalculateVelocity(_velocityObject, _target, 60f);
+                debug = true;
+            }
+
+        }
+        if(debug)
+            Debug.LogError("+++ " + _target.position + " / " + _velocityObject.position + " *** " + Vector3.Distance(_target.position, _velocityObject.position));
+
+        //var direction = target.position - velocityObject.position;
+        //Debug.DrawLine(_velocityObject.position, direction, Color.yellow);
+
     }
 
     private void OnDestroy()

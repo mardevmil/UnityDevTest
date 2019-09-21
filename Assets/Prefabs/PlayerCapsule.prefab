@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3474211902984126420}
   - component: {fileID: 9162912627578815232}
   m_Layer: 11
-  m_Name: Player
+  m_Name: PlayerCapsule
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6494986580525827979}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 500
   m_UseGravity: 0

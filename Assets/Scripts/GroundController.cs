@@ -9,10 +9,12 @@
         private void OnTriggerEnter(Collider other)
         {            
             var blockController = other.GetComponent<BlockController>();
-            if(blockController)
-            {
+            if(blockController)            
                 EventManager.blockFellOnGround(blockController);
-            }            
+            
+            var playerController = other.GetComponent<PlayerController>();
+            if (playerController)
+                EventManager.playerDeath();
         }
     }
 }

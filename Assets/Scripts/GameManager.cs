@@ -23,6 +23,8 @@
         [SerializeField]
         private GameManagerData _gameManagerData;
         
+        public GameManagerData Data { get => _gameManagerData; }
+
         [HideInInspector]
         public GameStatus gameStatus = GameStatus.OnStart;
 
@@ -42,6 +44,7 @@
         private int _blockCounter = 0;
         private BlockController _previousBlock;
         private BlockController _firstSpawedBlock;
+        private BlockController _nextBlockController;
         
         public int Counter { get => _blockCounter; }
 
@@ -79,6 +82,7 @@
             EventManager.playerLandedOnBlock += OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment += OnPlayerPassEndOfSegment;
             EventManager.blockFellOnGround += OnBlockFellOnGround;
+            EventManager.playerDeath += OnPlayerDeath;
             Initialization();
         }
 
@@ -88,6 +92,7 @@
             EventManager.playerLandedOnBlock -= OnPlayerLandedOnBlock;
             EventManager.playerPassEndOfSegment -= OnPlayerPassEndOfSegment;
             EventManager.blockFellOnGround -= OnBlockFellOnGround;
+            EventManager.playerDeath -= OnPlayerDeath;
         }
         #endregion
 
@@ -101,7 +106,9 @@
         private void OnPlayerLandedOnBlock(BlockController blockController)
         {
             currentBlockController = blockController;
+            _nextBlockController = currentBlockController.nextBlock;
             _blockCounter++;
+            Time.timeScale += _blockCounter * 0.01f;            
         }
 
         private void OnPlayerPassEndOfSegment()
@@ -121,9 +128,27 @@
             blockController.ResetValues();
             _blocksPool.Release(blockController.gameObject);
         }
+
+        private void OnPlayerDeath()
+        {
+            Time.timeScale = 0f;
+            GuiManager.Instance.ShowWindow("UI_DEATH");
+
+        }
         #endregion
 
         #region Misc
+
+        public void Revive()
+        {
+            Time.timeScale = 1f;
+            _blockCounter = 0;
+            var spawnPoint = _nextBlockController.SpawnPoint;
+            currentBlockController = _nextBlockController;
+            playerController.ResetPhysic();
+            playerController.transform.position = spawnPoint.position;
+            GuiManager.Instance.ShowWindow("UI_IN_GAME");
+        }
 
         public void Initialization()
         {
@@ -230,70 +255,6 @@
             }                      
         }
         
-        /// <summary>
-        /// Calculation velocity with given target and angle
-        /// </summary>
-        /// <param name="target"></param>
-        /// <param name="angle"></param>
-        /// <returns></returns>
-        public Vector3 CalculateVelocity(Transform target, float angle)
-        {
-            _direction = target.position - playerController.transform.position;  // get target direction
-            _heightDiff = _direction.y;  // get height difference
-            _direction.y = 0;  // retain only the horizontal direction
-            _distance = _direction.magnitude;  // get horizontal distance
-
-            // clamp angle if higher than max or lower than min
-            _correctedAngle = angle;
-            if (_correctedAngle >= _gameManagerData.JumpMaxAngle)
-                _correctedAngle = _gameManagerData.JumpMaxAngle;
-
-            if (_correctedAngle <= _gameManagerData.JumpMinAngle)
-                _correctedAngle = _gameManagerData.JumpMinAngle;
-
-
-            _angleRadians = _correctedAngle * Mathf.Deg2Rad;  // convert angle to radians
-            _direction.y = _distance * Mathf.Tan(_angleRadians);  // set dir to the elevation angle
-            _distance += _heightDiff / Mathf.Tan(_angleRadians);  // correct for small height differences
-
-            // calculate the velocity magnitude
-            _velocity = Mathf.Sqrt(_distance * Physics.gravity.magnitude / Mathf.Sin(2 * _angleRadians));
-
-            _correctedVelocity = _velocity;
-            _velocityCorrectionStep = 0.03f + (0.11f * Math.Abs(_heightDiff));
-
-            if (angle < _gameManagerData.OptimalAnglesTopLimit && angle > _gameManagerData.OptimalAnglesBottomLimit)
-                _jumpDebugStr = "Optimal Angle";
-
-            // correct velocity for overjump
-            if (angle < _gameManagerData.OverjumpAnglesTopLimit && angle > _gameManagerData.OverjumpAnglesBottomLimit)
-            {
-                _correctedVelocity = _correctedVelocity + (angle - _gameManagerData.OverjumpAnglesBottomLimit) * _velocityCorrectionStep;
-                _jumpDebugStr = "Over Angle";
-            }
-
-            // correct velocity for underjump
-            if (angle < _gameManagerData.UnderjumpAnglesTopLimit && angle > _gameManagerData.UnderjumpAnglesBottomLimit)
-            {
-                _correctedVelocity = _correctedVelocity - (angle - _gameManagerData.UnderjumpAnglesBottomLimit) * _velocityCorrectionStep / 2f;
-                _jumpDebugStr = "Under Angle";
-            }
-
-            // limit velocity if angle too high
-            if (angle > _gameManagerData.OptimalAnglesTopLimit)
-            {
-                _correctedVelocity = _gameManagerData.VelocityNormalLimit;
-                _jumpDebugStr = "Too High Angle";
-            }
-
-            _jumpDebugStr += ": " + (int)angle + " degrees";
-
-            if (_correctedVelocity > 20f) // just in case of buug with wrong block reference, it's fixed but...
-                _correctedVelocity = 3f;
-
-            return _correctedVelocity * _direction.normalized;
-        }
-
         #endregion
 
 

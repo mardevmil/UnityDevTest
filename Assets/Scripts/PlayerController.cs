@@ -1,5 +1,6 @@
 ﻿namespace JumpGame
 {
+    using mardevmil.Core;
     using UnityEngine;
 
     public class PlayerController : MonoBehaviour
@@ -81,8 +82,34 @@
                 {
                     Rigidbody.drag = 0f;
                     var target = nextBlock.prefectLandingPoint;
-                    var angle = currentBlock.Angle;
-                    Rigidbody.velocity = GameManager.Instance.CalculateVelocity(target, 65f);
+                    var blockAngle = currentBlock.Angle;
+                    var jumpAngle = Random.Range(GameManager.Instance.Data.JumpMinAngle, GameManager.Instance.Data.JumpMaxAngle);
+                    var vel = PhysicMath.CalculateVelocity(transform, target, jumpAngle);
+
+                    // correct velocity for over jump
+                    if (blockAngle < GameManager.Instance.Data.OverjumpAnglesTopLimit && blockAngle > GameManager.Instance.Data.OverjumpAnglesBottomLimit)
+                    {
+                        Debug.LogError("+++ over jump");
+                        vel = vel * 1.05f;
+                    }
+
+
+                    // correct velocity for under jump
+                    if (blockAngle < GameManager.Instance.Data.UnderjumpAnglesTopLimit && blockAngle > GameManager.Instance.Data.UnderjumpAnglesBottomLimit)
+                    {
+                        Debug.LogError("+++ under jump");
+                        vel = vel * 0.9f;
+                    }
+
+                    // limit velocity if angle too high
+                    if (blockAngle > GameManager.Instance.Data.OptimalAnglesTopLimit)
+                    {
+                        Debug.LogError("+++ too high jump");
+                        vel = vel * 0.9f;
+                    }
+
+                    Rigidbody.velocity = vel;
+
                     state = PlayerState.Jumped;                    
                 }
             }

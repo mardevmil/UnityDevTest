@@ -7,7 +7,8 @@
         public static VoidDelegate gameStarted = VoidIdle;
         public static VoidDelegate playerPassEndOfSegment = VoidIdle;
         public static BlockDelegate playerLandedOnBlock = BlockIdle;
-        public static BlockDelegate blockFellOnGround = BlockIdle;        
+        public static BlockDelegate blockFellOnGround = BlockIdle;
+        public static VoidDelegate playerDeath = VoidIdle;
 
         //idle methods
         static void VoidIdle() { }
